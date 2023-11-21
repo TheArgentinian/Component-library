@@ -5,6 +5,10 @@ function toggle(){
     setOpen(prevOpen => !prevOpen)
 }
 
-
+return(
+    <div className="menu">
+        {children}
+    </div>
+)
 
 }  
