@@ -1,9 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Menu from './components/Menu/Menu'
-import Badge from './components/badges'
+import Menu from './components/Menu/Index'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,9 +9,11 @@ function App() {
     <>
     <Menu>
     <Menu.Button>Menu</Menu.Button>
-    <Menu.Dropdown/>
+    <Menu.Item>Badges</Menu.Item>
+    <Menu.Item>Banners</Menu.Item>
+    <Menu.Item>Cards</Menu.Item>
+    <Menu.Item>Testimonials</Menu.Item>
     </Menu>
-      <Badge />
     </>
   )
 }

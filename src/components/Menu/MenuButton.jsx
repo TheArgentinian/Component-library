@@ -1,5 +1,5 @@
-export default function MenuButton({children}){
+export default function MenuButton({children, ...rest}){
     return (
-        <button>{children}</button>
+        <button {...rest}>{children}</button>
     )
 }
