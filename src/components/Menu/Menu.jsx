@@ -1,14 +1,14 @@
 import {createContext} from 'react'
-import { useState } from 'react'
+import useToggle from '../../hooks/useToggle'
 
 const MenuContext = createContext()
 export {MenuContext}
 
 export default function Menu({children}){
-const [open, setOpen] = useState(true)
+const [open, toggleOpen] = useToggle()
 
 return(
-    <MenuContext.Provider>
+    <MenuContext.Provider value={{open, toggleOpen}}>
     <div className="menu">
         {children}
     </div>

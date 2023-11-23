@@ -1,7 +1,16 @@
-export default function MenuDropdown(){
+import { useContext } from "react"
+import { MenuContext } from "./Menu"
+
+export default function MenuDropdown({children}){
+    const {open} = useContext(MenuContext)
     return (
         <>
-        <h1>testing</h1>
+        {open ? (
+        <div>
+        {children}
+        </div> 
+        ) : null
+        }
         </>
     )
 }
