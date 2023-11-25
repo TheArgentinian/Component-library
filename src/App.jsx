@@ -2,13 +2,17 @@ import { useState } from 'react'
 import './App.css'
 import Menu from './components/Menu/Index'
 import MenuDropdown from './components/Menu/MenuDropdown'
+import Badges from './components/Badges/Badges'
+import Banners from './components/Banners/Banners'
+import Cards from './components/Cards/Cards'
+import Testimonials from './components/Testimonials/Testimonials'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [component, setComponent] = useState("Home")
 
   return (
     <>
-    <Menu>
+    <Menu setComponent={setComponent}>
     <Menu.Button>Menu</Menu.Button>
     <MenuDropdown>
     <Menu.Item>Badges</Menu.Item>
@@ -17,6 +21,27 @@ function App() {
     <Menu.Item>Testimonials</Menu.Item>
     </MenuDropdown>
     </Menu>
+
+    <div>
+    {component === "Badges" && 
+    <Badges/>
+     }
+    </div>
+
+    <div>
+      {component === "Banners"? 
+      <Banners/>: null} 
+    </div>
+
+    <div>
+      {component === "Cards"? 
+      <Cards/>: null}
+    </div>
+
+    <div>
+      {component === "Testimonials" ?
+      <Testimonials/> : null}
+    </div>
     </>
   )
 }
