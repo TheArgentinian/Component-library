@@ -1,5 +1,8 @@
-export default function Badge({children}){
+export default function Badge({children, type, color}){
+    const badgeStyle = `badge ${type} ${color}`
+    console.log(badgeStyle)
+
     return (
-        <div>{children}</div>
+        <div className={badgeStyle}>{children}</div>
     )
 }
