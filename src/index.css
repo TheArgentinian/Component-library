@@ -110,3 +110,55 @@ button:focus-visible {
   background-color: #FCE7F3;
 }
 
+/* BANNERS */
+
+.bannerBox-success{
+  border-radius: 6px;
+  background: #34D399;
+}
+
+.bannerBox-warning{
+  border-radius: 6px;
+  background:#FBBF24
+}
+
+.bannerBox-error{
+  border-radius: 6px;
+  background:#F87171
+}
+
+.bannerBox-neutral{
+  border-radius: 6px;
+  background:#60A5FA
+}
+
+.banner-status{
+  color: #5E5D5D;
+text-align: right;
+font-family: Permanent Marker;
+font-size: 44.1px;
+font-style: normal;
+font-weight: 400;
+line-height: 63px; /* 142.857% */
+}
+
+.banner-title{
+  color: inherit;
+  /* text-sm/leading-5/font-medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.banner-description{
+  color: inherit;
+
+  /* text-sm/leading-5/font-normal */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
