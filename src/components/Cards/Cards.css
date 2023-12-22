@@ -1,0 +1,16 @@
+h1{
+    color: #111827;
+text-align: center;
+
+/* text-lg/leading-7/font-medium */
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 155.556% */
+}
+
+.card{
+    border-radius: 8px;
+  background: #F9FAFB;
+  }

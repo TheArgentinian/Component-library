@@ -7,6 +7,7 @@ import Banners from './components/Banners/Banners'
 import Cards from './components/Cards/Cards'
 import Testimonials from './components/Testimonials/Testimonials'
 
+
 function App() {
   const [component, setComponent] = useState("Home")
 
